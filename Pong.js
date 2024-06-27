@@ -5,5 +5,5 @@ function setup() {
 
 function draw() {
     // Aqui vou colocar a cor da "mesa"
-    background(0,139,139);
+    background(139,0,0);
 }
