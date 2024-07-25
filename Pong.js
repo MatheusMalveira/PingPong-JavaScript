@@ -3,7 +3,9 @@ let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
 
-
+//velocidade
+let xVelocidadeBolinha = 6;
+let yVelocidadeBolinha = 6;
 
 function setup() {
     // Aqui vou criar minha "mesa"
@@ -20,9 +22,12 @@ function draw() {
 //função bolinha
 function CriaBolinha(xBolinha, yBolinha, tamBolinha) {
     circle(xBolinha, yBolinha, tamBolinha);
-
 }
 
-
+//função move bolinha
+function moveBolinha(){
+    xBolinha = xVelocidadeBolinha + xBolinha;
+    yBolinha = yVelocidadeBolinha + yBolinha;
+}
 
 
