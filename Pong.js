@@ -18,6 +18,7 @@ function draw() {
     //chamando a função
     CriaBolinha(xBolinha, yBolinha, tamBolinha);
     moveBolinha();
+    borda();
 }
 
 //função bolinha
