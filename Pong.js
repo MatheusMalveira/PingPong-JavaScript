@@ -35,6 +35,6 @@ function borda(){
     if (xBolinha > width || xBolinha <0){
         xVelocidadeBolinha *= -1;
     }
-    if yBolinha > width || yBolinha <0){
+    if yBolinha > heidth || yBolinha <0){
         yVelocidadeBolinha *= -1;
 }
