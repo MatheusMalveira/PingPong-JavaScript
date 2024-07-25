@@ -31,4 +31,10 @@ function moveBolinha(){
     yBolinha = yVelocidadeBolinha + yBolinha;
 }
 
-
+function borda(){
+    if (xBolinha > width || xBolinha <0){
+        xVelocidadeBolinha *= -1;
+    }
+    if yBolinha > width || yBolinha <0){
+        yVelocidadeBolinha *= -1;
+}
