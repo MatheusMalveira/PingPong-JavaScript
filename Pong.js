@@ -22,7 +22,7 @@ function draw() {
 
 //função bolinha
 function CriaBolinha(xBolinha, yBolinha, tamBolinha) {
-   
+    circle(xBolinha, yBolinha, tamBolinha);
 }
 
 //função move bolinha
