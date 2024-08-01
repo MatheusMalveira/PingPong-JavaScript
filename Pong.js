@@ -9,7 +9,7 @@ let yvelocidadeBolinha = 6;
 
 function setup(){
     //aqui vou criar minha "mesa"
-    createCanvas(600,400);
+    createCanvas(1000,1000);
 }
 
 function draw(){
@@ -43,4 +43,8 @@ function Borda(){
     if (yBolinha > height || yBolinha < 0){
         yvelocidadeBolinha *= -1;
     }
+}
+
+function criaRaquete(){
+
 }
