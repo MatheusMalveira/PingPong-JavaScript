@@ -1,18 +1,4 @@
 
-Conversa aberta. Uma mensagem não lida.
-
-Pular para o conteúdo
-Como usar o E-mail de SEED com leitores de tela
-
-2 de 6.328
-(sem assunto)
-Caixa de entrada
-
-MATHEUS VIVIANI MALVEIRA <matheus.malveira@escola.pr.gov.br>
-16:23 (há 2 minutos)
-para mim
-
-
 let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
