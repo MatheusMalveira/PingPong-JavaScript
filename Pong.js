@@ -1,41 +1,46 @@
-//aqui vou criar a bolinha
+//aqui eu vou criar a bolinha
 let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
 
-//velocidade
-let xVelocidadeBolinha = 6;
-let yVelocidadeBolinha = 6;
+//config velocidade bolinha
+let xvelocidadeBolinha = 6;
+let yvelocidadeBolinha = 6;
 
-function setup() {
-    // Aqui vou criar minha "mesa"
-   createCanvas(600,400);
+function setup(){
+    //aqui vou criar minha "mesa"
+    createCanvas(600,400);
 }
 
-function draw() {
-    // Aqui vou colocar a cor da "mesa"
-    background(139,0,0);
-    //chamando a função
-    CriaBolinha(xBolinha, yBolinha, tamBolinha);
+function draw(){
+    //função responsável pelo "desenho e animação da mesa"
+    //aqui vou por a cor da "mesa"
+    //A cor da mesa é em rgb
+    background(128,128,0); 
+    //chamando a função cria bolinha para criar a bolinha
+    criaBolinha(xBolinha, yBolinha, tamBolinha);
+    //chamando a função mov bolinha
     moveBolinha();
-    borda();
+    //chamando a borda
+    Borda();
 }
 
 //função bolinha
-function CriaBolinha(xBolinha, yBolinha, tamBolinha) {
-    circle(xBolinha, yBolinha, tamBolinha);
+function criaBolinha(xBolinha, yBolinha,tamBolinha){
+    circle (xBolinha,yBolinha,tamBolinha);
 }
 
 //função move bolinha
 function moveBolinha(){
-    xBolinha = xVelocidadeBolinha + xBolinha;
-    yBolinha = yVelocidadeBolinha + yBolinha;
+    xBolinha = xvelocidadeBolinha + xBolinha;
+    yBolinha = yvelocidadeBolinha + yBolinha;
 }
 
-function borda(){
-    if (xBolinha > width || xBolinha <0){
-        xVelocidadeBolinha *= -1;
+function Borda(){
+    if (xBolinha > width || xBolinha < 0){
+        xvelocidadeBolinha *= -1;
     }
-    if (yBolinha > heidth || yBolinha <0){
-        yVelocidadeBolinha *= -1;
+    if (yBolinha > height || yBolinha < 0){
+        yvelocidadeBolinha *= -1;
+    }
 }
