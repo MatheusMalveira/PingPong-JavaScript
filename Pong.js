@@ -4,8 +4,8 @@ let yBolinha = 200;
 let tamBolinha = 25;
 
 //config velocidade bolinha
-let xvelocidadeBolinha = 50;
-let yvelocidadeBolinha = 50;
+let xvelocidadeBolinha = 500;
+let yvelocidadeBolinha = 500;
 
 function setup(){
     //aqui vou criar minha "mesa"
