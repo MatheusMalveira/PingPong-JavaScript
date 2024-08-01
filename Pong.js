@@ -9,7 +9,7 @@ let yvelocidadeBolinha = 6;
 
 function setup(){
     //aqui vou criar minha "mesa"
-    createCanvas(1000,1000);
+    createCanvas(1000,2000);
 }
 
 function draw(){
